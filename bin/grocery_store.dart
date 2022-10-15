@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:grocery_store/grocery_store.dart';
 
 void main() {
 //  Read the file
@@ -8,4 +9,5 @@ void main() {
 
   // Convert the contents to a map
   var groceryMap = jsonDecode(contents);
+  print(getTotal(groceryMap['products']));
 }

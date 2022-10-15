@@ -1,0 +1,154 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Apple",
+            "price": 1.20,
+            "type": "fruit"
+        },
+        {
+            "id": 2,
+            "name": "Orange",
+            "price": 2.40,
+            "type": "fruit"
+        },
+        {
+            "id": 3,
+            "name": "Banana",
+            "price": 0.99,
+            "type": "fruit"
+        },
+        {
+            "id": 4,
+            "name": "Carrot",
+            "price": 0.50,
+            "type": "vegetable"
+        },
+        {
+            "id": 5,
+            "name": "Celery",
+            "price": 1.50,
+            "type": "vegetable"
+        },
+        {
+            "id": 6,
+            "name": "Broccoli",
+            "price": 1.99,
+            "type": "vegetable"
+        },
+        {
+            "id": 7,
+            "name": "Milk",
+            "price": 2.99,
+            "type": "dairy"
+        },
+        {
+            "id": 8,
+            "name": "Cheese",
+            "price": 3.99,
+            "type": "dairy"
+        },
+        {
+            "id": 9,
+            "name": "Yogurt",
+            "price": 0.99,
+            "type": "dairy"
+        },
+        {
+            "id": 10,
+            "name": "Chicken",
+            "price": 4.99,
+            "type": "meat"
+        },
+        {
+            "id": 11,
+            "name": "Beef",
+            "price": 5.99,
+            "type": "meat"
+        },
+        {
+            "id": 12,
+            "name": "Pork",
+            "price": 6.99,
+            "type": "meat"
+        },
+        {
+            "id": 13,
+            "name": "Bread",
+            "price": 2.35,
+            "type": "grain"
+        },
+        {
+            "id": 14,
+            "name": "Rice",
+            "price": 1.00,
+            "type": "grain"
+        },
+        {
+            "id": 15,
+            "name": "Pasta",
+            "price": 1.75,
+            "type": "grain"
+        },
+        {
+            "id": 16,
+            "name": "Eggs",
+            "price": 3.99,
+            "type": "other"
+        },
+        {
+            "id": 17,
+            "name": "Cereal",
+            "price": 4.49,
+            "type": "other"
+        },
+        {
+            "id": 18,
+            "name": "Coffee",
+            "price": 11.99,
+            "type": "other"
+        },
+        {
+            "id": 19,
+            "name": "Tea",
+            "price": 6.99,
+            "type": "other"
+        },
+        {
+            "id": 20,
+            "name": "Sugar",
+            "price": 2.49,
+            "type": "other"
+        },
+        {
+            "id": 21,
+            "name": "Salt",
+            "price": 1.99,
+            "type": "other"
+        },
+        {
+            "id": 22,
+            "name": "Pepper",
+            "price": 2.99,
+            "type": "other"
+        },
+        {
+            "id": 23,
+            "name": "Soy Sauce",
+            "price": 3.49,
+            "type": "other"
+        },
+        {
+            "id": 24,
+            "name": "Ketchup",
+            "price": 2.99,
+            "type": "other"
+        },
+        {
+            "id": 25,
+            "name": "Mustard",
+            "price": 2.49,
+            "type": "other"
+        }
+    ]
+}

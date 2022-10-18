@@ -20,8 +20,10 @@ int getAmount(List products) {
   //  products: A list of products
   //  returns:
   // The amount of products
-
   int amount = 0;
+  for (var item in products) {
+    amount++;
+  }
 
   return amount;
 }
@@ -35,7 +37,10 @@ double getTotalPrices(List products) {
   // The total of prices
 
   double total = 0.0;
-
+  for (var item in products) {
+    total += item['price'];
+  }
+  print(total);
   return total;
 }
 
@@ -48,6 +53,11 @@ int getAmountFruits(List products) {
   // The amount of fruits
 
   int amount = 0;
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      amount++;
+    }
+  }
 
   return amount;
 }
@@ -61,6 +71,11 @@ double getTotalPricesFruits(List products) {
   // The total of prices of fruits
 
   double total = 0.0;
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      total += item['price'];
+    }
+  }
 
   return total;
 }
@@ -74,6 +89,11 @@ int getAmountVegetables(List products) {
   // The amount of vegetables
 
   int amount = 0;
+  for (var item in products) {
+    if (item['type'] == 'vegetable') {
+      amount++;
+    }
+  }
 
   return amount;
 }
@@ -87,6 +107,11 @@ double getTotalPricesVegetables(List products) {
   // The total of prices of vegetables
 
   double total = 0.0;
+  for (var item in products) {
+    if (item['type'] == 'vegetable') {
+      total += item['price'];
+    }
+  }
 
   return total;
 }
@@ -100,6 +125,11 @@ int getAmountDairy(List products) {
   // The amount of dairy products
 
   int amount = 0;
+  for (var item in products) {
+    if (item['type'] == 'dairy') {
+      amount++;
+    }
+  }
 
   return amount;
 }
@@ -113,6 +143,11 @@ double getTotalPricesDairy(List products) {
   // The total of prices of dairy products
 
   double total = 0.0;
+  for (var item in products) {
+    if (item['type'] == 'dairy') {
+      total += item['price'];
+    }
+  }
 
   return total;
 }
@@ -126,6 +161,11 @@ int getAmountMeat(List products) {
   // The amount of meat products
 
   int amount = 0;
+  for (var item in products) {
+    if (item['type' == 'meat']) {
+      amount++;
+    }
+  }
 
   return amount;
 }
@@ -139,6 +179,11 @@ double getTotalPricesMeat(List products) {
   // The total of prices of meat products
 
   double total = 0.0;
+  for (var item in products) {
+    if (item['type'] == 'meat') {
+      total += item['price'];
+    }
+  }
 
   return total;
 }
@@ -153,6 +198,17 @@ String getMostExpensive(List products) {
 
   String mostExpensive = '';
 
+  List expensive = [];
+  List ee = [];
+  int l = products.length;
+
+  for (var item in products) {
+    expensive.add(item['price']);
+    ee.add(item['price']);
+  }
+  expensive.sort();
+
+  mostExpensive = products[ee.indexOf(expensive.last)]['name'];
   return mostExpensive;
 }
 
@@ -166,6 +222,17 @@ String getCheapest(List products) {
 
   String cheapest = '';
 
+  List expensive = [];
+  List ee = [];
+  int l = products.length;
+
+  for (var item in products) {
+    expensive.add(item['price']);
+    ee.add(item['price']);
+  }
+  expensive.sort();
+  cheapest = products[ee.indexOf(expensive[0])]['name'];
+
   return cheapest;
 }
 
@@ -178,6 +245,17 @@ String getMostExpensiveFruit(List products) {
   // The most expensive fruit
 
   String mostExpensive = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    mostExpensive = products[b.indexOf(a.last)]['name'];
+  }
 
   return mostExpensive;
 }
@@ -191,6 +269,17 @@ String getCheapestFruit(List products) {
   // The cheapest fruit
 
   String cheapest = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    cheapest = products[b.indexOf(a[0])]['name'];
+  }
 
   return cheapest;
 }
@@ -204,6 +293,17 @@ String getMostExpensiveVegetable(List products) {
   // The most expensive vegetable
 
   String mostExpensive = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'vegetable') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    mostExpensive = products[b.indexOf(a.last)]['name'];
+  }
 
   return mostExpensive;
 }
@@ -217,6 +317,17 @@ String getCheapestVegetable(List products) {
   // The cheapest vegetable
 
   String cheapest = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'vegetable') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    cheapest = products[b.indexOf(a[0])]['name'];
+  }
 
   return cheapest;
 }
@@ -230,6 +341,17 @@ String getMostExpensiveDairy(List products) {
   // The most expensive dairy product
 
   String mostExpensive = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'dairy') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    mostExpensive = products[b.indexOf(a.last)]['name'];
+  }
 
   return mostExpensive;
 }
@@ -243,6 +365,17 @@ String getCheapestDairy(List products) {
   // The cheapest dairy product
 
   String cheapest = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'dairy') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    cheapest = products[b.indexOf(a[0])]['name'];
+  }
 
   return cheapest;
 }
@@ -256,6 +389,17 @@ String getMostExpensiveMeat(List products) {
   // The most expensive meat product
 
   String mostExpensive = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'meat') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    mostExpensive = products[b.indexOf(a.last)]['name'];
+  }
 
   return mostExpensive;
 }
@@ -269,6 +413,17 @@ String getCheapestMeat(List products) {
   // The cheapest meat product
 
   String cheapest = '';
+  List a, b;
+  a = [];
+  b = [];
+  for (var item in products) {
+    if (item['type'] == 'meat') {
+      a.add(item['price']);
+      b.add(item['price']);
+    }
+    a.sort();
+    cheapest = products[b.indexOf(a[0])]['name'];
+  }
 
   return cheapest;
 }

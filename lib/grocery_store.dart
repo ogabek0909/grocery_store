@@ -274,8 +274,8 @@ String getCheapestFruit(List products) {
   b = [];
   for (var item in products) {
     if (item['type'] == 'fruit') {
-      a.add(item['price']);
       b.add(item['price']);
+      a.add(item['price']);
     }
     a.sort();
     cheapest = products[b.indexOf(a[0])]['name'];
@@ -413,16 +413,12 @@ String getCheapestMeat(List products) {
   // The cheapest meat product
 
   String cheapest = '';
-  List a, b;
-  a = [];
-  b = [];
-  for (var item in products) {
-    if (item['type'] == 'meat') {
-      a.add(item['price']);
-      b.add(item['price']);
+  double a = 0;
+  for (var i in products) {
+    if (i['price'] > a) {
+      a = i['price'];
+      cheapest = i['name'];
     }
-    a.sort();
-    cheapest = products[b.indexOf(a[0])]['name'];
   }
 
   return cheapest;
